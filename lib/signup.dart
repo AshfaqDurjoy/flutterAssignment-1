@@ -1,5 +1,7 @@
+import 'package:assignment/Random.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignupPage extends StatefulWidget{
   @override
@@ -120,7 +122,7 @@ class _SignupPageState extends State<SignupPage>{
                     elevation: 7.0,
                     child: GestureDetector(
                       onTap: (){
-
+                        Get.to(MyHome());
                       },
                       child: Center(
                         child: Text(

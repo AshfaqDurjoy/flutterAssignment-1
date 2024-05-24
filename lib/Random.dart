@@ -1,3 +1,4 @@
+import 'package:assignment/Dashboard.dart';
 import 'package:assignment/forgotpassword.dart';
 import 'package:assignment/signup.dart';
 import 'package:flutter/cupertino.dart';
@@ -162,7 +163,8 @@ Widget _Credentials(){
               elevation: 7.0,
               child: GestureDetector(
                 onTap: (){
-
+                    print("Dashboard e gese");
+                    Get.to(DashBoard());
                 },
                 child: Center(
                   child: Text(
