@@ -14,7 +14,13 @@ class DashBoard extends StatelessWidget{
       ),
          body: Container(
            alignment: Alignment.center,
-           child: Text("Hello"),
+           child: Text("Hello",
+           style: TextStyle(
+             fontFamily: 'Times New Roman',
+             fontSize: 50.0,
+             fontWeight: FontWeight.bold
+           ),
+           ),
 
          ),
 

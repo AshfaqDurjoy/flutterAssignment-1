@@ -5,7 +5,7 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 
 import 'MyHomePage.dart';
-import 'Random.dart';
+import 'LoginPage.dart';
 import 'Welcome_page.dart';
 
 void main() {

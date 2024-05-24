@@ -1,4 +1,4 @@
-import 'package:assignment/Random.dart';
+import 'package:assignment/LoginPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -121,7 +121,7 @@ class _SignupPageState extends State<SignupPage>{
                     color:Colors.blue,
                     elevation: 7.0,
                     child: GestureDetector(
-                      onTap: (){
+                        onTap: (){
                         Get.to(MyHome());
                       },
                       child: Center(

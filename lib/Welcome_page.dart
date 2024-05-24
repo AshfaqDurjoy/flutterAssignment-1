@@ -1,57 +1,49 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:assignment/LoginPage.dart';
 
-import 'Random.dart';
-
-class WelcomePage extends StatelessWidget{
+class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: AppBar(
+    return Scaffold(
 
-      ),
-      resizeToAvoidBottomInset: false,
-      body:
-      Column(
-        color: Colors.lightBlueAccent,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children:<Widget> [
-          Container(
-            padding: EdgeInsets.only(top: 35.0,left: 20.0,right: 20.0),
-            child: Column(
-              children:<Widget> [
-                Container(
-                  height: 40.0,
-                  child: Material(
-                    borderRadius: BorderRadius.circular(50.0),
-                    shadowColor: Colors.greenAccent,
-                    color:Colors.white,
-                    elevation: 7.0,
-                    child: GestureDetector(
-                      onTap: (){
-
-                      },
-                      child: Center(
-                        child: Text(
-                          '->',
-                          style: TextStyle(
-                            color: Colors.blue,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'Montserrat',
-                          ),
-                        ),
-                      ),
-                    ),
+      body: GestureDetector(
+        onVerticalDragStart: (_) {
+          Get.to(MyHome());
+        },
+        child: Container(
+          color: Colors.lightBlueAccent,
+          child: Center(child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'WELCOME',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 50.0,
+                  fontFamily: 'Montserrat',
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(height: 20.0),
+              Container(
+                padding: const EdgeInsets.all(24),
+                child: const Text(
+                  "Swipe to get Started",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                    fontFamily: 'Montserrat',
                   ),
                 ),
+              ),
+            ],
+          ),),
 
-              ],
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
-
 }
